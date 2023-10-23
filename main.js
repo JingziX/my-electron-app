@@ -1,5 +1,6 @@
 
 const { app, BrowserWindow } = require('electron');
+const path = require('path');
 try {
     require('electron-reloader')(module,{});
 } catch (_) {}
@@ -10,11 +11,12 @@ const createWindow = () => {
     webPreferences: {
         nodeIntegration: true,
         contextIsolation: false,
-    }
+    },
+    icon:path.join(__dirname,"./public/icon/icon.png")
   });
-  // if(process.platform==="darwin"){
-  //   prompt.dock.setIcon(path.join(__dirname,"./public/icon/icon.png"))
-  // }
+  if(process.platform==="darwin"){
+    app.dock.setIcon(path.join(__dirname,"./public/icon/icon.png"))
+  }
   win.loadFile('index.html');
 };
 

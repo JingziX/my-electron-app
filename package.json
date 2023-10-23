@@ -49,5 +49,27 @@
         }
       ]
     }
+  },
+  "mac": {
+    "icon": "./public/icon/icon.icns"
+  },
+  "win": {
+    "icon": "./public/icon/icon.ico"
+  },
+  "linux": {
+    "icon": "./public/icon/icon.ico"
+  },
+  "nsis": {
+    "oneClick": false,
+    "guid": "idea",
+    "perMachine": true,
+    "allowElevation": true,
+    "allowToChangeInstallationDirectory": true,
+    "installerIcon": "./public/icon/icon.ico",
+    "uninstallerIcon": "./public/icon/icon.ico",
+    "installerHeaderIcon": "./public/icon/icon.ico",
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "shortcutName": "idea"
   }
 }
