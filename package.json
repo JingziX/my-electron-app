@@ -8,7 +8,8 @@
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
-    "make": "electron-forge make"
+    "make": "electron-forge make",
+    "dist": "electron-builder"
   },
   "devDependencies": {
     "@electron-forge/cli": "^6.0.0-beta.66",
@@ -50,26 +51,30 @@
       ]
     }
   },
+  "directories":{
+    "output":"dist"
+  },
   "mac": {
-    "icon": "./public/icon/icon.icns"
+    "icon": "icon.ico",
+    "target": [
+      "dmg",
+      "zip"
+    ]
   },
   "win": {
-    "icon": "./public/icon/icon.ico"
-  },
-  "linux": {
-    "icon": "./public/icon/icon.ico"
+    "icon": "icon.ico",
+    "target": [
+      "nsis",
+      "zip"
+    ]
   },
   "nsis": {
     "oneClick": false,
-    "guid": "idea",
-    "perMachine": true,
-    "allowElevation": true,
-    "allowToChangeInstallationDirectory": true,
-    "installerIcon": "./public/icon/icon.ico",
-    "uninstallerIcon": "./public/icon/icon.ico",
-    "installerHeaderIcon": "./public/icon/icon.ico",
-    "createDesktopShortcut": true,
-    "createStartMenuShortcut": true,
-    "shortcutName": "idea"
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "installerIcon": "icon.ico",
+      "uninstallerIcon": "icon.ico",
+      "installerHeaderIcon": "icon.ico"
   }
 }

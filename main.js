@@ -12,10 +12,10 @@ const createWindow = () => {
         nodeIntegration: true,
         contextIsolation: false,
     },
-    icon:path.join(__dirname,"./public/icon/icon.png")
+    icon:path.join(__dirname,"./build/icons/icon.png")
   });
   if(process.platform==="darwin"){
-    app.dock.setIcon(path.join(__dirname,"./public/icon/icon.png"))
+    app.dock.setIcon(path.join(__dirname,"./build/icons/icon.png"))
   }
   win.loadFile('index.html');
 };
