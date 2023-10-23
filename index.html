@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'"
+    />
+    <link rel="stylesheet" href="./static/index.css">
+    <script src="./static/index.js"></script>
+  </head>
+  <body>
+    <div class="box">
+      <div class="select-file">
+        <input type="file" multiple id="myFile" class="myFile">
+        <div class="addbtn" draggable="true" id="openDialogBtn">求和</div>
+      </div>
+      <p class="total" id="total"></p>
+      <p class="nums" id="nums"></p>
+      <div class="infomation-tip">
+        <p>1、文件名类型需要以.png、.jpg、.jpeg结尾，名称要以数字命名，重复数字用-1，-2，_1区分，例如：21.png、21-1.jpg、21_1.jpg</p>
+        <p>2、选中文件后点击求和自动计算总和</p>
+      </div>
+    </div>
+  </body>
+</html>

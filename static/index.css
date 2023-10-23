@@ -1,0 +1,60 @@
+:root{
+    --theme-color:#b7564d;
+    --theme-color1:#8f80ab;
+    --theme-shadow: #e67d8c
+}
+body{
+    background: url(./bg.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+.box{
+    background: rgba(255, 255, 255, 0.85);
+    margin: 20px;
+    padding: 50px 20px;
+    height: calc(100vh - 80px);
+    width: calc(100vw - 60px);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px 2px #fff;
+    border-radius: 10px;
+}
+.select-file{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myFile{
+    appearance: none;
+    border: 1px solid var(--theme-color);
+    background: var(--theme-color);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px 2px var(--theme-color) inset;
+}
+.addbtn{
+    color: var(--theme-color);
+    background: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 30px;
+    font-size: 20px;
+    box-shadow: 0px 0px 6px 2px var(--theme-color) inset;
+    background: #fff;
+}
+.total{
+    color: var(--theme-color);
+    font-size: 20px;
+}
+.nums{
+    color: var(--theme-color);
+    word-wrap: break-word;
+}
+.infomation-tip{
+    color: var(--theme-color1);
+    margin-top: 60px;
+}
