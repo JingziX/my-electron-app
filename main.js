@@ -6,8 +6,8 @@ try {
 } catch (_) {}
 const createWindow = () => {
   const win = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1000,
+    height: 800,
     webPreferences: {
         nodeIntegration: true,
         contextIsolation: false,
