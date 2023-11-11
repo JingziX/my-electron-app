@@ -17,7 +17,7 @@ const createWindow = () => {
   if(process.platform==="darwin"){
     app.dock.setIcon(path.join(__dirname,"./build/icons/icon.png"))
   }
-  win.loadFile('index.html');
+  win.loadFile('static/index.html');
 };
 
 app.whenReady().then(() => {
