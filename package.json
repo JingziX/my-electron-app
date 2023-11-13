@@ -22,7 +22,8 @@
   },
   "dependencies": {
     "@electron/remote": "^2.0.8",
-    "electron-squirrel-startup": "^1.0.0"
+    "electron-squirrel-startup": "^1.0.0",
+    "pdfjs-dist": "^4.0.189"
   },
   "config": {
     "forge": {
@@ -51,8 +52,8 @@
       ]
     }
   },
-  "directories":{
-    "output":"dist"
+  "directories": {
+    "output": "dist"
   },
   "mac": {
     "icon": "icon.ico",
@@ -70,11 +71,11 @@
   },
   "nsis": {
     "oneClick": false,
-      "allowToChangeInstallationDirectory": true,
-      "createDesktopShortcut": true,
-      "createStartMenuShortcut": true,
-      "installerIcon": "icon.ico",
-      "uninstallerIcon": "icon.ico",
-      "installerHeaderIcon": "icon.ico"
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "installerIcon": "icon.ico",
+    "uninstallerIcon": "icon.ico",
+    "installerHeaderIcon": "icon.ico"
   }
 }

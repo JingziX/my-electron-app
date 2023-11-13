@@ -1,7 +1,9 @@
-:root{
-    --theme-color:#b7564d;
-    --theme-color1:#8f80ab;
-    --theme-shadow: #590707;
+.backbtn{
+    color: var(--theme-color);
+    text-decoration: none;
+}
+.content{
+    margin: 30px;
 }
 .inbtn{
     color: #fff;
