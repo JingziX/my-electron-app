@@ -23,7 +23,8 @@
   "dependencies": {
     "@electron/remote": "^2.0.8",
     "electron-squirrel-startup": "^1.0.0",
-    "pdfjs-dist": "^4.0.189"
+    "pdfjs-dist": "^4.0.189",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.2/xlsx-0.20.2.tgz"
   },
   "config": {
     "forge": {
