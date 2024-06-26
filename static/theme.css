@@ -3,3 +3,10 @@
     --theme-color1:#8f80ab;
     --theme-shadow: #590707;
 }
+body,div,ul,li,ol,input,p,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}

@@ -44,10 +44,14 @@ body{
 .total{
     color: var(--theme-color);
     font-size: 20px;
+    height: 30px;
+    margin-top: 20px;
 }
 .nums{
     color: var(--theme-color);
     word-wrap: break-word;
+    margin-top: 10px;
+    height: 30px;
 }
 .infomation-tip{
     color: var(--theme-color1);
@@ -70,4 +74,27 @@ body{
     text-shadow: 1px 0px 1px var(--theme-shadow);
     margin-right: 30px;
     text-decoration: none;
+}
+.back{
+    color: var(--theme-color);
+    vertical-align: middle;
+}
+.history-box{
+    margin-top: 20px;
+    display: flex;
+    justify-content: right;
+}
+.history-btn{
+    color: #fff;
+    border-radius: 2px;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    white-space: nowrap;
+    background: var(--theme-color);
 }
