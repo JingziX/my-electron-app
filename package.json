@@ -1,7 +1,7 @@
 {
-  "name": "my-electron-app",
+  "name": "tools",
   "version": "1.0.0",
-  "description": "统计工具",
+  "description": "各类工具集",
   "main": "main.js",
   "author": "jingzi",
   "license": "MIT",
@@ -18,6 +18,7 @@
     "@electron-forge/maker-squirrel": "^6.0.0-beta.66",
     "@electron-forge/maker-zip": "^6.0.0-beta.66",
     "electron": "^21.0.0",
+    "electron-builder": "^24.13.3",
     "electron-reloader": "^1.2.3"
   },
   "dependencies": {
@@ -33,7 +34,7 @@
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "my_electron_app"
+            "name": "啥都行"
           }
         },
         {
@@ -56,19 +57,22 @@
   "directories": {
     "output": "dist"
   },
-  "mac": {
-    "icon": "icon.ico",
-    "target": [
-      "dmg",
-      "zip"
-    ]
-  },
-  "win": {
-    "icon": "icon.ico",
-    "target": [
-      "nsis",
-      "zip"
-    ]
+  "build": {
+    "appId": "your.id",
+    "mac": {
+      "icon": "icon.icns",
+      "target": [
+        "dmg",
+        "zip"
+      ]
+    },
+    "win": {
+      "icon": "icon.ico",
+      "target": [
+        "nsis",
+        "zip"
+      ]
+    }
   },
   "nsis": {
     "oneClick": false,

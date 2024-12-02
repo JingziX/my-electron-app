@@ -1,7 +1,7 @@
 node_modules
 out
 yarn.lock
-.DS_Store
 .env
 build/.DS_Store
+.DS_Store
 static/.DS_Store

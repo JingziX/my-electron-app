@@ -51,7 +51,7 @@ body{
     color: var(--theme-color);
     word-wrap: break-word;
     margin-top: 10px;
-    height: 30px;
+    min-height: 30px;
 }
 .infomation-tip{
     color: var(--theme-color1);
@@ -81,8 +81,9 @@ body{
 }
 .history-box{
     margin-top: 20px;
+}
+.history-btn-box{
     display: flex;
-    justify-content: right;
 }
 .history-btn{
     color: #fff;
@@ -91,10 +92,14 @@ body{
     text-align: center;
     display: inline-block;
     vertical-align: middle;
-    margin-left: 30px;
+    margin-right: 20px;
     height: 30px;
     line-height: 30px;
     font-size: 14px;
     white-space: nowrap;
     background: var(--theme-color);
+}
+.btn-box{
+    position: absolute;
+    bottom: 100px;
 }

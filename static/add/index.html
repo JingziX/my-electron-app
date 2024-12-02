@@ -2,7 +2,7 @@
  * @Author: jingzi 1163478123@qq.com
  * @Date: 2022-09-28 17:04:13
  * @LastEditors: jingzi 1163478123@qq.com
- * @LastEditTime: 2024-06-26 14:34:54
+ * @LastEditTime: 2024-11-01 15:00:47
  * @Description: 
  * Copyright (c) 2024 by ${git_name}, All Rights Reserved. 
 -->
@@ -25,19 +25,30 @@
       <a class="back" href="../index.html"><i class="iconfont icon-iconfontjiantou3"></i>返回</a>
       <div class="select-file">
         <input type="file" multiple id="myFile" class="myFile">
-        <div class="addbtn" draggable="true" id="openDialogBtn">求和</div>
+        <div class="addbtn" draggable="true" id="addFile">求和</div>
       </div>
       <p class="total" id="total"></p>
       <p class="nums" id="nums"></p>
       <div class="history-box" id="history">
-        <span class="history-nums" id="historyTotal"></span>
-        <span class="history-btn" id="addHistory">历史求和</span>
-        <span class="history-btn" id="clearHistory">清除历史</span>
+        <div class="history-btn-box">
+          <span class="history-btn" id="addHistory">历史求和</span>
+          <span class="history-btn" id="clearHistory">清除历史</span>
+        </div>
+        <p class="history-nums" id="historyTotal"></p>
+      </div>
+      <div class="history-box">
+        <h5 class="">历史数据</h5>
+        <div id="historyData"></div>
       </div>
       <div class="infomation-tip">
         <p>1、文件名类型需要以.png、.jpg、.jpeg结尾，名称要以数字命名，重复数字用-1，-2，_1区分，例如：21.png、21-1.jpg、21_1.jpg</p>
         <p>2、选中文件后点击求和自动计算总和</p>
       </div>
+      <div class="btn-box">
+        <a class="inbtn" href="/add/index.html">文件求和</a>
+        <a class="inbtn" href="/pdf/index.html">pdf读取</a>
+        <a class="inbtn" href="/excel/index.html">excel合并</a>
+    </div>
     </div>
   </body>
 </html>
