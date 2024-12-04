@@ -29,7 +29,9 @@
   },
   "config": {
     "forge": {
-      "packagerConfig": {},
+      "packagerConfig": {
+        "icon": "./build/icons"
+      },
       "makers": [
         {
           "name": "@electron-forge/maker-squirrel",
@@ -54,20 +56,20 @@
       ]
     }
   },
-  "directories": {
-    "output": "dist"
-  },
   "build": {
     "appId": "your.id",
+    "directories": {    
+      "output": "dist"
+    },
     "mac": {
-      "icon": "icon.icns",
+      "icon": "./build/icons/icon.icns",
       "target": [
         "dmg",
         "zip"
       ]
     },
     "win": {
-      "icon": "icon.ico",
+      "icon": "./build/icons/icon.ico",
       "target": [
         "nsis",
         "zip"
